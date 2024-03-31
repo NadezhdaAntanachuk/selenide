@@ -30,6 +30,6 @@ public class AppCardDeliveryTaskOneTest {
         $(cssSelector("button.button")).click();
         $(cssSelector("div.notification__content"))
                 .shouldBe(visible, Duration.ofSeconds(15))
-                .shouldHave(exactText("Встреча успешно забронирована на1 " + planningDate));
+                .shouldHave(exactText("Встреча успешно забронирована на " + planningDate));
     }
 }
